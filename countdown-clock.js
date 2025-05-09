@@ -19,6 +19,7 @@ var holidayIcons = {
   "Independence Day": atob("IyOBAHgAAAAfgAAAAz////5n////7MADgA+YADAA80kn//5gAP//zAAYAPmkkwAPMAB//eYAD//80kmAD5gAMADz////3n/////OAAAB+YAAAA8////55/////zv///fmAAAAPOAAAAef////8/////5gAMADzAAYAHmAAwAPMABgA+YAD//swAH/8ZgAAAAzAAAAB+AAAAD8AAAAAA="),
   "Labor Day": atob("IyOBAAMGDBgP////+//////hgwYMPCAAAIeAAAAA8AAAAB////////////gAAAAPAAAAAeAf4AA8B//AB4DM/4DwGZ34HgMzG4PAZmMweA/8Zg8D/4zB4OA7mDwYB/cHgwP/wPBj4HAeDHgGA8GAAMB4MAAYDwcAAwHgYADAPA8AOAeA8AYA8AYAwB4AwBgDwBgDAH///////////4A=")
 };
+
 // TODO - Date has some formatting that should be able to handle this
 var monthNamesShortened = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 var dayNames = ["Sun", "Mon", "Tues", "Wed", "Thu", "Fri", "Sat"];
@@ -224,8 +225,7 @@ function getNextHoliday(orderedHolidays) {
 // once per run, and cached. This assumes the watch app will not run continuously for more
 // than one year, which is hopefully a safe assumption
 function getOrderedHolidays() {
-  // TODO - load birthday list from a json file!
-  
+    
   var today = new Date();
 
   // Convert holiday definitions list to a list of holidays with dates
